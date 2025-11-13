@@ -26,7 +26,12 @@ import userRoutes from "./routes/user.routes.js"
 
 
 // route declaration 
-app.use("/api/v1/users", userRoutes)
+app.use("/api/v1/users", userRoutes);
+
+// improt subscribe route
+import subscribeRoute from "./routes/subscribe.route.js";
+
+app.use("/api/v1/subscribe", subscribeRoute);
 
 
 export {app}
