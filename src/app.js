@@ -34,4 +34,25 @@ import subscribeRoute from "./routes/subscribe.route.js";
 app.use("/api/v1/subscribe", subscribeRoute);
 
 
+
+// video routes
+
+
+// import healthcheckRouter from "./routes/healthcheck.routes.js"
+// import tweetRouter from "./routes/tweet.routes.js"
+// import subscriptionRouter from "./routes/subscription.routes.js"
+// import likeRouter from "./routes/like.routes.js"
+// import playlistRouter from "./routes/playlist.routes.js"
+// import dashboardRouter from "./routes/dashboard.routes.js"
+
+
+
+
+import router from "./routes/video.route.js";
+app.use("/api/v1/videos", router);
+
+import CommentRouter from "./routes/comment.route.js";
+app.use("/api/v1/comments", CommentRouter);
+
+
 export {app}
