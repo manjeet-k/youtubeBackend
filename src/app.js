@@ -34,6 +34,18 @@ import subscribeRoute from "./routes/subscribe.route.js";
 app.use("/api/v1/subscribe", subscribeRoute);
 
 
+// import like route 
+import likeRouter from "./routes/like.route.js"
+
+app.use("/api/v1/like", likeRouter)
+
+// playlist routes
+import playlistRouter from "./routes/playlist.Route.js"
+app.use("/api/v1/playlist", playlistRouter)
+
+
+
+
 
 // video routes
 
