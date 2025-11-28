@@ -44,7 +44,9 @@ import playlistRouter from "./routes/playlist.Route.js"
 app.use("/api/v1/playlist", playlistRouter)
 
 
-
+// dashboard routes
+import dashRouter from "./routes/dashboard.route.js"
+app.use("/api/v1/dashboard", dashRouter)
 
 
 // video routes
